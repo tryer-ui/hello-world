@@ -1,0 +1,10 @@
+D:\VisuStudio_Projects\winForm_1\winForm_1\bin\Debug\winForm_1.exe.config
+D:\VisuStudio_Projects\winForm_1\winForm_1\bin\Debug\winForm_1.exe
+D:\VisuStudio_Projects\winForm_1\winForm_1\bin\Debug\winForm_1.pdb
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.csprojAssemblyReference.cache
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.Form1.resources
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.Properties.Resources.resources
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.GenerateResource.cache
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.CoreCompileInputs.cache
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.exe
+D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.pdb
