@@ -12,6 +12,7 @@ namespace winForm_1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +41,12 @@ namespace winForm_1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void addInvoice_Button_Click(object sender, EventArgs e)
+        {
+           
+            MessageBox.Show("show something");
         }
     }
 }

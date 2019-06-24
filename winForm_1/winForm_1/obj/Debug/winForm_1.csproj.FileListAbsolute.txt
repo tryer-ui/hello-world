@@ -8,3 +8,13 @@ D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.GenerateRe
 D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.CoreCompileInputs.cache
 D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.exe
 D:\VisuStudio_Projects\winForm_1\winForm_1\obj\Debug\winForm_1.pdb
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\bin\Debug\winForm_1.exe.config
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\bin\Debug\winForm_1.exe
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\bin\Debug\winForm_1.pdb
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.csprojAssemblyReference.cache
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.Form1.resources
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.Properties.Resources.resources
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.GenerateResource.cache
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.CoreCompileInputs.cache
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.exe
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.pdb
