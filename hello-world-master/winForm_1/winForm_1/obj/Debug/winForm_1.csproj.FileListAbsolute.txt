@@ -18,3 +18,5 @@ C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1
 C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.csproj.CoreCompileInputs.cache
 C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.exe
 C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\obj\Debug\winForm_1.pdb
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\bin\Debug\pluginDataBase1.mdf
+C:\Users\Adi\Downloads\hello-world-master\hello-world-master\winForm_1\winForm_1\bin\Debug\pluginDataBase1_log.ldf

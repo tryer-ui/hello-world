@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,9 +49,20 @@ namespace winForm_1
            string supName = combo_SupName.Text;
             string invID = text_InvID.Text;
             string invDate = date_InvDate.Value.ToShortDateString();
-            float invPrice = float.Parse(text_Price.Text);
+            float invSum = float.Parse(text_Price.Text);
             string invNote = text_Note.Text;
-            MessageBox.Show("Invoice Added! " + supName + " " + invID + " "+ date_InvDate + " " + invPrice + " " + invNote);
+            MessageBox.Show("Invoice data is: " + supName + " " + invID + " "+ date_InvDate + " " + invSum + " " + invNote);
+            string connetionString;
+            SqlConnection cnn;
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\pluginDataBase1.mdf;Integrated Security=True";
+            cnn = new SqlConnection(connetionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "INSERT INTO Invoices VALUES (invID, supName, invDate, invSum, invNote)";
+            cnn.Open();
+            MessageBox.Show("Connection Open  !");
+            cmd.ExecuteNonQuery();
+            cnn.Close();
         }
     }
 }
