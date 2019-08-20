@@ -44,6 +44,8 @@
             this.showReport_Button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.addSupplier = new System.Windows.Forms.Button();
+            this.Exit_Btn1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,7 +210,7 @@
             this.showReport_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.showReport_Button.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showReport_Button.ForeColor = System.Drawing.Color.Black;
-            this.showReport_Button.Location = new System.Drawing.Point(196, 1217);
+            this.showReport_Button.Location = new System.Drawing.Point(592, 1202);
             this.showReport_Button.Margin = new System.Windows.Forms.Padding(6);
             this.showReport_Button.Name = "showReport_Button";
             this.showReport_Button.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -243,12 +245,38 @@
             this.label7.Text = "מערכת לניהול חשבוניות";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // addSupplier
+            // 
+            this.addSupplier.BackColor = System.Drawing.Color.LavenderBlush;
+            this.addSupplier.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addSupplier.Location = new System.Drawing.Point(592, 460);
+            this.addSupplier.Name = "addSupplier";
+            this.addSupplier.Size = new System.Drawing.Size(183, 63);
+            this.addSupplier.TabIndex = 15;
+            this.addSupplier.Text = "הוסף ספק";
+            this.addSupplier.UseVisualStyleBackColor = false;
+            this.addSupplier.Click += new System.EventHandler(this.addSupplier_Click);
+            // 
+            // Exit_Btn1
+            // 
+            this.Exit_Btn1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Exit_Btn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Btn1.Location = new System.Drawing.Point(68, 1248);
+            this.Exit_Btn1.Name = "Exit_Btn1";
+            this.Exit_Btn1.Size = new System.Drawing.Size(150, 69);
+            this.Exit_Btn1.TabIndex = 16;
+            this.Exit_Btn1.Text = "יציאה";
+            this.Exit_Btn1.UseVisualStyleBackColor = false;
+            this.Exit_Btn1.Click += new System.EventHandler(this.Exit_Btn1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(2736, 1460);
+            this.Controls.Add(this.Exit_Btn1);
+            this.Controls.Add(this.addSupplier);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.showReport_Button);
@@ -291,6 +319,8 @@
         private System.Windows.Forms.Button showReport_Button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button addSupplier;
+        private System.Windows.Forms.Button Exit_Btn1;
     }
 }
 

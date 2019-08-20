@@ -46,23 +46,53 @@ namespace winForm_1
 
         private void addInvoice_Button_Click(object sender, EventArgs e)
         {
-           string supName = combo_SupName.Text;
+            string supName = combo_SupName.Text;
             string invID = text_InvID.Text;
             string invDate = date_InvDate.Value.ToShortDateString();
             float invSum = float.Parse(text_Price.Text);
             string invNote = text_Note.Text;
-            MessageBox.Show("Invoice data is: " + supName + " " + invID + " "+ date_InvDate + " " + invSum + " " + invNote);
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\pluginDataBase1.mdf;Integrated Security=True";
-            cnn = new SqlConnection(connetionString);
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO Invoices VALUES (invID, supName, invDate, invSum, invNote)";
-            cnn.Open();
-            MessageBox.Show("Connection Open  !");
-            cmd.ExecuteNonQuery();
-            cnn.Close();
+
+            string tocmd = "INSERT INTO Invoices VALUES ('" + invID + "', '" + supName + "', '" + invDate + "', " + invSum + ", '" + invNote + "')";
+            addInvoice(tocmd);
+           // string connetionString;
+           // SqlConnection cnn;
+           // connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\pluginDataBase1.mdf;Integrated Security=True";
+          //  cnn = new SqlConnection(connetionString);
+            //string tocmd = "INSERT INTO Invoices VALUES ('" + invID + "', '" + supName + "', '" + invDate + "', " + invSum + ", '" + invNote + "')";
+           // MessageBox.Show("string tocmd is: " + tocmd);
+           // SqlCommand cmd = new SqlCommand(tocmd, cnn);
+        }
+
+        private void addSupplier_Click(object sender, EventArgs e)
+        {
+            Form2 addSup = new Form2();
+            addSup.Show();
+        }
+
+        private void Exit_Btn1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        public static void addInvoice(string tocmd)
+        {
+            using (SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\pluginDataBase1.mdf;Integrated Security=True"))
+            {
+                cnn.Open();
+                MessageBox.Show("Connection Open");
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(tocmd, cnn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch(Exception exc)
+                {
+                    Console.WriteLine(exc.ToString());
+                    MessageBox.Show("Some error accord, check console output for more info");
+                }
+                //cnn.Close();
+             //   MessageBox.Show("Connection Closed");
+            }
         }
     }
 }
